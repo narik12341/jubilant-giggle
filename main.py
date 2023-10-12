@@ -1,6 +1,6 @@
 x=3
-z="+"
+z="*"
 c=5
-if z == "+":
-    print(x+c)
+if z == "*":
+    print(x*c)
 
