@@ -1,0 +1,37 @@
+x=input("Name ")
+c=input("Age ")
+v=input("Gender ")
+print("accaount balance has been update:$1000")
+n=1000
+m=int(input())
+z=n-m
+print("Personal Details")
+print("Name", x)
+print("Age",c)
+print("Gender",v)
+print("Insufficient Funds | Balance Available : $" + str(z))
+print("Хотите добавить нового пользователя?")
+a=input("")
+if ("Да"):
+   x1=input("Name ")
+   c1=input("Age ")
+   v1=input("Gender ")
+   print("accaount balance has been update:$1000")
+   n1=1000
+   m1=int(input())
+   z1=n1-m1
+   print("Personal Details")
+   print("Name", x1)
+   print("Age",c1)
+   print("Gender",v1)
+   print("Insufficient Funds | Balance Available : $" + str(z1))
+elif ("нет"):
+   print("хорошо")
+else:
+   print()
+if z>z1:
+   print("у Джона мёнгн больше чем у Майкла")
+elif z<z1:
+   print("У Майкла больше мёнгн чем у Джона")
+else:
+   print()
