@@ -1,0 +1,3 @@
+x=int(input())
+sqrt=x**(0.5)
+print("Квадратный корень из числа "+str(x)+" это "+str(sqrt))
