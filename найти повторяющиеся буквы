@@ -1,0 +1,8 @@
+text=input("веддите слово:" )
+seen=""
+for c in text:
+    if c not in seen:
+        print(f"{c}:{text.count(c)}")
+        seen+=c
+    else:
+        print()
