@@ -1,0 +1,4 @@
+def ispangrams(s):
+    return set('abcdefghijklmnopqrstuwxyz')== set(s.lower().replace('',''))
+text=input()
+print(ispangrams(text))
