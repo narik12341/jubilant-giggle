@@ -1,0 +1,7 @@
+words= input("")
+seach=""
+for slovo in range(1,len(words)-2):
+    for i in range(len(words)-slovo):
+      if words[i]==words[slovo+i]:
+        print(words[i],end='')
+    print()
