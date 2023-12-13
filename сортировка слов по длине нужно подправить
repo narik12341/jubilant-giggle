@@ -1,0 +1,3 @@
+list=['jkj','qwerty','qw','qwertyui']
+for i in sorted(list,key=len):
+    print(i)
