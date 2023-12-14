@@ -1,0 +1,5 @@
+ocenki = [2,4,3,2,5,5,4,2,3,5,5,2,4,4,5,3,2,4,4,5]
+kol_ocenok=list(map(lambda x:ocenki.count(x),[5,4,3]))
+print(["Количество 5:",kol_ocenok[0],"количество 4:",kol_ocenok[1],"Количество 3:",kol_ocenok[2]])
+s=sum(ocenki)/len(ocenki)
+print("Среднее значение:",s)
