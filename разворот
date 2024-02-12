@@ -1,0 +1,6 @@
+N,t=int(input()),[]
+g= input()
+g=g.split()
+for i in range(N):
+    t+=[g[i]]
+print(''.join(t[::-1]))
