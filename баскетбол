@@ -1,0 +1,13 @@
+a= 0
+b = 0
+result = 'DRAW'
+with open('input.txt', 'r') as f_in, open('output.txt', 'w') as f_out:
+    for line in f_in.read().splitlines():
+        a1, b1 = map(int, line.split())
+        a += a1 
+        b += b1
+    if a > b:
+        result = '1'
+    elif a < b:
+        result = '2'
+    f_out.write(result)
