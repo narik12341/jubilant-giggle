@@ -1,0 +1,3 @@
+read(x, y, z)
+s = x+y-z
+if(s<0) write(’Impossible’); else write(s)
