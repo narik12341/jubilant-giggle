@@ -52,7 +52,7 @@ def login():
                 messagebox.showerror("Error!")
         else:
             messagebox.showerror("Error!")
- registracia()
+registracia()
 
 
 root.mainloop()
