@@ -1,0 +1,36 @@
+rint("Options:")
+print("Enter 'add for")
+print("Enter 'sub'for subtraction")
+print("Enter 'mul' for multiplication")
+print("Enter 'div' for division")
+print("Enter 'quit' to end the program")
+user_input = input(": ")
+if user_input == "quit":
+    print("end code")
+elif user_input in ("add", "sub", "mul", "div"):
+    print()
+
+
+def operation(num1, num2):
+    if user_input == 'add':
+        z = num1 + num2
+        return ("Result:" + str(z))
+    elif user_input == 'mul':
+        z = num1 * num2
+        return ("Result: " + str(z))
+    elif user_input == 'sub':
+        z = num1 - num2
+        return ("Result: " + str(z))
+    elif user_input == 'div':
+        z = num1 / num2
+        return ("Result: " + str(z))
+    else:
+        return ()
+
+try:
+    a = float(input("Enter first number:"))
+    b = float(input("Enter second number:"))
+    result = operation(a, b)
+    print(result)
+except:
+     print("Дебил цирфы а не буквы")
