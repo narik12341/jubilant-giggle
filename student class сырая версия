@@ -1,0 +1,21 @@
+class Student:
+    def __init__(self,name,age,grade):
+        self.name=name
+        self.age=age
+        self.grade=grade
+
+
+    def average_score(self,score):
+        ocenki = [2, 4, 3, 2, 5, 5, 4, 2, 3, 5, 5, 2, 4, 4, 5, 3, 2, 4, 4, 5]
+        kol_ocenok = list(map(lambda x: ocenki.count(x), [5, 4, 3]))
+        print(["Количество 5:", kol_ocenok[0], "количество 4:", kol_ocenok[1], "Количество 3:", kol_ocenok[2]])
+        s = sum(ocenki) / len(ocenki)
+        print(self.score,"Среднее значение:", s)
+
+    def intro(self):
+        print(f'Анкета ученика{self.name,self.age}.Он учится в{self.grade}')
+
+
+student1=Student("Narik", "15"," 9 классе" )
+student1.intro()
+student1.average_score(score= 5)
