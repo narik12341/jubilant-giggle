@@ -1,0 +1,26 @@
+import datetime
+
+
+class Task:
+    def __init__(self,title,description,deadline):
+        self.title = title
+        self.description = description
+        self.deadline = deadline
+        self.completed = False
+
+    def set_deadline(self,new_deadline):
+        self.deadline=new_deadline
+
+
+    def compltede(self):
+        self.complted=True
+
+task1=Task("Подготовить презентацию","Подготовить материалы и слайды для презентации",datetime.datetime(2024,12,31))
+print(task1.title)
+print(task1.deadline)
+
+task1.set_deadline(datetime.datetime(2024,12,25))
+print(task1.deadline)
+
+task1.compltede()
+print(task1.complted)
