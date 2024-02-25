@@ -1,0 +1,21 @@
+class Animal:
+    def __init__(self,species,name,age,place):
+        self.species=species
+        self.name=name
+        self.age=age
+        self.place=place
+
+    def eat(self,food):
+        print(self.name,"Относится к",food)
+
+    def size(self,size):
+        print(self.name,"Относится к",size)
+
+    def intro(self):
+        print( f'Этот животное {self.species,self.name}.Ему{self.age}')
+
+
+Animal1=Animal("Lion","Barsik","12","Africa")
+Animal1.intro()
+Animal1.eat("Плотоядным")
+Animal1.size("Крупным кошачьим")
