@@ -1,0 +1,40 @@
+import random
+
+koloda = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11]4
+koloda1 = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11]4
+random.shuffle(koloda)
+random.shuffle(koloda1)
+
+print("Поиграем в BlackJack?")
+count_user = 0
+count_diler = 0
+
+
+while True:
+    choice = input('Будете брать карту? y/n\n')
+    if choice == 'y':
+        current_user = koloda.pop()
+        current_diller = koloda1.pop()
+        print(f'Вам попалась карта: {current_user}')
+        count_user += current_user
+        print('Диллер взял карту')
+        count_diler += current_diller
+        if count_user > 21:
+            print(f'Еблан,перебор,у диллера {count_diler}')
+            break
+        elif count_user == 21:
+            print('Поздравляю,вы набрали 21!')
+            break
+        elif count_diler > 21:
+            print(f'Диллер еблан')
+        else:
+            print(f'У вас {count_user} очков.')
+    elif choice == 'n':
+        if count_user < count_diler:
+            print(f'Проиграл боту, еблан, у диллера {count_diler}')
+        elif count_user == count_diler:
+            print(f'ахуеть, ничья ')
+        else:
+            print(f'Выйграл бля(((((, у диллера {count_diler}')
+        break
+print('До новых встреч!')
