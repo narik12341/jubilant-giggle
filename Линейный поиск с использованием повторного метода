@@ -1,6 +1,6 @@
 import re
 arr= [10,20,80,30,60,50,100,110,120,170]
-x = 110
+x = int(input())
 arr_str=','.join(str(i) for i in arr)
 match = re.search(r'\b{}\b'. format(x), arr_str)
 if match:
