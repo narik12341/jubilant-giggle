@@ -4,7 +4,7 @@ class Student:
         self.age = age
         self.grade = grade
 
-
+# Function to perform binary search on a sorted list of students
 def binary_search(students, target_name):
     low = 0
     high = len(students) - 1
@@ -29,7 +29,10 @@ students = [
     Student("Charlie", 21, "C")
 ]
 
+# Sort the list of students by name
+students.sort(key=lambda x: x.name)
 
+# Performing binary search for a student named 
 target_name = input("")
 found_student = binary_search(students, target_name)
 
