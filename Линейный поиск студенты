@@ -1,0 +1,28 @@
+class Student:
+    def __init__(self, name, age, grade):
+        self.name = name
+        self.age = age
+        self.grade = grade
+
+
+def linear_search(students, target_name):
+    for student in students:
+        if student.name == target_name:
+            return student
+    return None
+
+# Creating a list of student objects
+students = [
+    Student("Alice", 20, "A"),
+    Student("Bob", 22, "B"),
+    Student("Charlie", 21, "C")
+]
+
+
+target_name = input("")
+found_student = linear_search(students, target_name)
+
+if found_student:
+    print("Student found - Name: {}, Age: {}, Grade: {}".format(found_student.name, found_student.age, found_student.grade))
+else:
+    print("Student with name {} not found".format(target_name))
