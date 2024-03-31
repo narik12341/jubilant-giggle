@@ -4,7 +4,7 @@ class Student:
         self.age = age
         self.grade = grade
 
-
+# Function to perform linear search on a list of students
 def linear_search(students, target_name):
     for student in students:
         if student.name == target_name:
@@ -18,7 +18,7 @@ students = [
     Student("Charlie", 21, "C")
 ]
 
-
+# Performing linear search for a student named 
 target_name = input("")
 found_student = linear_search(students, target_name)
 
